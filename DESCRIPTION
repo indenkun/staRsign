@@ -1,0 +1,13 @@
+Package: staRsign
+Type: Package
+Title: Calculate the star sign from birthday
+Version: 0.1.0
+Author: Kobayashi
+Maintainer: Kobayashi <blog@indenkun.hatenablog.com>
+Description: Calculate the star sign from birthday. 
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: lubridate (>= 1.7.8)
+RoxygenNote: 7.1.0
