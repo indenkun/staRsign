@@ -53,7 +53,7 @@ It is also possible to output in Japanese (かな + 座).
 
 誕生日のみを参照しています。
 
-I am referring only to the date of birth.
+Referring only to the date of birth.
 
 西洋占星術で用いられる正確な十二宮（12星座）の時期については算出していません。
 
