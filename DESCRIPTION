@@ -2,8 +2,8 @@ Package: staRsign
 Type: Package
 Title: Calculate the star sign from birthday
 Version: 0.1.0
-Author: Kobayashi
-Maintainer: Kobayashi <blog@indenkun.hatenablog.com>
+Author: indenkun
+Maintainer: indenkun <blog@indenkun.hatenablog.com>
 Description: Calculate the star sign from birthday. 
 Depends: R (>= 4.0.0)
 License: MIT + file LICENSE
