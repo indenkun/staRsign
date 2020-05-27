@@ -19,30 +19,61 @@ in astrology from the date of birth on R.
 Enter the date of birth, it will output the 12 constellations in Latin
 English names.
 
-    staRsign::staRsign("12/25")
+``` r
+staRsign::staRsign("12/25")
+```
+
+    ## [1] "Capricorn"
 
 標準では日付についてmonth/day形式をサポートしますが、それ以外もフォーマットを指定すると処理可能です。
 
 By default, month/day format is supported for the date, but other
 formats can be processed if the format is specified.
 
-    staRsign::staRsign("2020/12/25", format = "%Y/%m/%d")
-    staRsign::staRsign("12-25", format = "%m-%d")
+``` r
+staRsign::staRsign("2020/12/25", format = "%Y/%m/%d")
+```
+
+    ## [1] "Capricorn"
+
+``` r
+staRsign::staRsign("12-25", format = "%m-%d")
+```
+
+    ## [1] "Capricorn"
 
 処理できない13/1やNAを含む日付以外のデータなどを入力するとNAを出力します。
 
 If you input data that cannot be processed, such as 13/1 or data other
 than the date containing NA, NA will be output.
 
-    staRsign::staRsign("13/1")
-    staRsign::staRsign(NA)
-    staRsign::staRsign("HOGE")
+``` r
+staRsign::staRsign("13/1")
+```
+
+    ## [1] NA
+
+``` r
+staRsign::staRsign(NA)
+```
+
+    ## [1] NA
+
+``` r
+staRsign::staRsign("HOGE")
+```
+
+    ## [1] NA
 
 日本語（かな+座）での出力も可能です。
 
 It is also possible to output in Japanese (かな + 座).
 
-    staRsign::staRsign.ja("12/25")
+``` r
+staRsign::staRsign.ja("12/25")
+```
+
+    ## [1] "やぎ座"
 
 ## Depends/Imprors to use this package
 

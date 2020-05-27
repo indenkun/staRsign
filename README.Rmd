@@ -24,14 +24,14 @@ devtools::install_github("indenkun/staRsign")
 誕生日を入力すると12星座をラテン語式英名で出力します。
 
 Enter the date of birth, it will output the 12 constellations in Latin English names.
-```
+```{r use1}
 staRsign::staRsign("12/25")
 ```
 
 標準では日付についてmonth/day形式をサポートしますが、それ以外もフォーマットを指定すると処理可能です。
 
 By default, month/day format is supported for the date, but other formats can be processed if the format is specified.
-```
+```{r use2}
 staRsign::staRsign("2020/12/25", format = "%Y/%m/%d")
 staRsign::staRsign("12-25", format = "%m-%d")
 ```
@@ -39,7 +39,7 @@ staRsign::staRsign("12-25", format = "%m-%d")
 処理できない13/1やNAを含む日付以外のデータなどを入力するとNAを出力します。
 
 If you input data that cannot be processed, such as 13/1 or data other than the date containing NA, NA will be output.
-```
+```{r use3}
 staRsign::staRsign("13/1")
 staRsign::staRsign(NA)
 staRsign::staRsign("HOGE")
@@ -48,7 +48,7 @@ staRsign::staRsign("HOGE")
 日本語（かな+座）での出力も可能です。
 
 It is also possible to output in Japanese (かな + 座).
-```
+```{r use4}
 staRsign::staRsign.ja("12/25")
 ```
 
