@@ -1,6 +1,6 @@
 Package: staRsign
 Type: Package
-Title: Calculate the star sign from birthday
+Title: Calculate the star sign and oriental zodiac
 Version: 0.1.2
 Author: indenkun
 Maintainer: indenkun <blog@indenkun.hatenablog.com>
