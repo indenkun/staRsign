@@ -1,10 +1,10 @@
 Package: staRsign
 Type: Package
 Title: Calculate the star sign from birthday
-Version: 0.1.1
+Version: 0.1.2
 Author: indenkun
 Maintainer: indenkun <blog@indenkun.hatenablog.com>
-Description: Calculate the star sign from birthday. 
+Description: Calculate the star sign, oriental zodiac from day or year data. 
 Depends: R (>= 4.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
