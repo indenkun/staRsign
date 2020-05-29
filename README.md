@@ -127,6 +127,7 @@ and may not return the expected twelve signs of the oriental zodiac.
 
 ``` r
 # これは2000 / 2 / 1 = 1000として解釈されます 
+# This is interpreted as 2000 / 2 / 1 = 1000
 staRsign::oRiental_zodiac(2000/2/1)
 ```
 
@@ -150,10 +151,10 @@ The date data supports the “%Y/%m/%d” format by default, but other
 formats can also be specified in the format.
 
 ``` r
-staRsign::oRiental_zodiac("2020/12", "%Y/%m")
+staRsign::oRiental_zodiac("2020/12", "%Y/%M")
 ```
 
-    ## [1] NA
+    ## [1] "Rat"
 
 日本語（漢字）での出力も可能です。
 

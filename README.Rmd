@@ -89,6 +89,7 @@ staRsign::oRiental_zodiac("2020/12/25")
 If not enclosed in double-cotations, it may be interpreted as a formula and may not return the expected twelve signs of the oriental zodiac.
 ```{r use oriental3}
 # これは2000 / 2 / 1 = 1000として解釈されます 
+# This is interpreted as 2000 / 2 / 1 = 1000
 staRsign::oRiental_zodiac(2000/2/1)
 staRsign::oRiental_zodiac(2000)
 staRsign::oRiental_zodiac("2000/2/1")
@@ -98,7 +99,7 @@ staRsign::oRiental_zodiac("2000/2/1")
 
 The date data supports the "%Y/%m/%d" format by default, but other formats can also be specified in the format.
 ```{r use oriental4}
-staRsign::oRiental_zodiac("2020/12", "%Y/%m")
+staRsign::oRiental_zodiac("2020/12", "%Y/%M")
 ```
 
 日本語（漢字）での出力も可能です。
