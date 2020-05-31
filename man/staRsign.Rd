@@ -7,8 +7,8 @@
 staRsign(birthday, format = "\%m/\%d")
 }
 \arguments{
-\item{birthday}{A date object in "month/dayya" format of Birthday whose want to calculate the
-star sign.}
+\item{birthday}{A date object in "month/day" or objects of Class "Date" format of
+Birthday whose want to calculate the star sign.}
 
 \item{format}{Character date string. If you want to use a date object "m-d" or "Y/m/d",
 change format.}

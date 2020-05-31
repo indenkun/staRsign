@@ -1,6 +1,6 @@
 #' Calculate oriental zodiac from year or date inclued year data
 #'
-#' @param year A numeric data or date object format "year/month/day".
+#' @param year A numeric of year or date object format "year/month/day" or objects of class "Date".
 #' @param format Character data string. If you want to use a date object "m-d" or "Y/m/d",
 #'               change format.
 #'
@@ -62,7 +62,7 @@ oRiental_zodiac <- function(year, format = "%Y/%m/%d"){
 
 #' Calculate oriental zodiac in japanese from year or date inclued year data
 #'
-#' @param year A numeric data or date object format "year/month/day".
+#' @param year A numeric of year or date object format "year/month/day" or object of class "Date".
 #' @param format Character data string. If you want to use a date object "m-d" or "Y/m/d",
 #'               change format.
 #'

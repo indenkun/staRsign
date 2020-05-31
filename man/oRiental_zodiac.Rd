@@ -7,7 +7,7 @@
 oRiental_zodiac(year, format = "\%Y/\%m/\%d")
 }
 \arguments{
-\item{year}{A numeric data or date object format "year/month/day".}
+\item{year}{A numeric of year or date object format "year/month/day" or objects of class "Date".}
 
 \item{format}{Character data string. If you want to use a date object "m-d" or "Y/m/d",
 change format.}

@@ -1,7 +1,7 @@
 #' Calculate the star sign from birthday
 #'
-#' @param birthday A date object in "month/dayya" format of Birthday whose want to calculate the
-#'                 star sign.
+#' @param birthday A date object in "month/day" or objects of Class "Date" format of
+#'                 Birthday whose want to calculate the star sign.
 #' @param format Character date string. If you want to use a date object "m-d" or "Y/m/d",
 #'               change format.
 #'
@@ -58,8 +58,8 @@ staRsign <- function(birthday ,
 
 #' Calculate the star sign in japanese from birthday
 #'
-#' @param birthday A date object in "month/day" format of Birthday whose want to calculate the
-#'                 star sign.
+#' @param birthday A date object in "month/day" or Objects of Class "Date" format of
+#'                 Birthday whose want to calculate the star sign.
 #' @param format Character date string. If you want to use a date object "m-d" or "Y/m/d",
 #'               you can change format.
 #'
