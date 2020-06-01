@@ -64,6 +64,7 @@ staRsign::staRsign.ja("12/25")
 oRiental_zodiacは年または年を含む日付データから十二支をRで出力するための関数です。
 
 oRiental_zodiac is a function to output a zodiac on R from date data containing a year or number of year.
+
 ### How to use
 
 引数に0以上の年を入力するとその年の十二支を英語で出力します。
