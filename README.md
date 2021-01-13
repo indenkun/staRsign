@@ -174,10 +174,9 @@ staRsign::oRiental_zodiac.ja("2020/12/25")
 
     ## [1] "子"
 
-## Depends/Imprors to use this package
+## Imprors to use this package
 
-  - R (\>= 4.0.0)
-  - lubridate (\>= 1.7.8)
+  - lubridate
 
 ## notice
 

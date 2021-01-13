@@ -1,13 +1,12 @@
 Package: staRsign
 Type: Package
 Title: Calculate the star sign and oriental zodiac
-Version: 0.1.2
+Version: 0.1.3
 Author: indenkun
 Maintainer: indenkun <blog@indenkun.hatenablog.com>
 Description: Calculate the star sign, oriental zodiac from day or year data. 
-Depends: R (>= 4.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: lubridate (>= 1.7.8)
-RoxygenNote: 7.1.0
+Imports: lubridate
+RoxygenNote: 7.1.1

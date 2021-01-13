@@ -9,9 +9,6 @@
 #' staRsign("12/25")
 #' staRsign("2020/12/25", format = "%Y/%m/%d")
 #'
-#' @importFrom lubridate month
-#' @importFrom lubridate day
-#'
 #' @export
 
 staRsign <- function(birthday ,
@@ -66,9 +63,6 @@ staRsign <- function(birthday ,
 #' @examples
 #' staRsign.ja("12/25")
 #' staRsign.ja("2020/12/25", format = "%Y/%m/%d")
-#'
-#' @importFrom lubridate month
-#' @importFrom lubridate day
 #'
 #' @export
 

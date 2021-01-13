@@ -8,8 +8,6 @@
 #' oRiental_zodiac(2020)
 #' oRiental_zodiac("2020/12/25")
 #'
-#' @importFrom lubridate year
-#'
 #' @export
 
 oRiental_zodiac <- function(year, format = "%Y/%m/%d"){
@@ -69,8 +67,6 @@ oRiental_zodiac <- function(year, format = "%Y/%m/%d"){
 #' @examples
 #' oRiental_zodiac.ja(2020)
 #' oRiental_zodiac.ja("2020/12/25")
-#'
-#' @importFrom lubridate year
 #'
 #' @export
 
