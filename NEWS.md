@@ -1,3 +1,6 @@
+# staRsign 0.1.4
+* 
+
 # staRsign 0.1.3
 
 * Optimized the code.

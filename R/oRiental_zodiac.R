@@ -11,6 +11,7 @@
 #' @export
 
 oRiental_zodiac <- function(year, format = "%Y/%m/%d"){
+  stopifnot(length(year) == 1)
   # Extract number of month and date.
   if(!is.numeric(year)){
     y <- lubridate::year(as.Date(year, format))
@@ -71,6 +72,7 @@ oRiental_zodiac <- function(year, format = "%Y/%m/%d"){
 #' @export
 
 oRiental_zodiac.ja <- function(year, format = "%Y/%m/%d"){
+  stopifnot(length(year) == 1)
   # Extract number of month and date.
   if(!is.numeric(year)){
     y <- lubridate::year(as.Date(year, format))

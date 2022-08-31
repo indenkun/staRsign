@@ -13,6 +13,7 @@
 
 staRsign <- function(birthday ,
                      format = "%m/%d"){
+  stopifnot(length(birthday) == 1)
   # Extract number of month and date.
   m <- lubridate::month(as.Date(birthday, format))
   d <- lubridate::day(as.Date(birthday, format))
@@ -68,6 +69,7 @@ staRsign <- function(birthday ,
 
 staRsign.ja <- function(birthday ,
                         format = "%m/%d"){
+  stopifnot(length(birthday) == 1)
   # Extract number of month and date.
   m <- lubridate::month(as.Date(birthday, format))
   d <- lubridate::day(as.Date(birthday, format))
