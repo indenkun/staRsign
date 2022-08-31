@@ -3,12 +3,17 @@ README
 
 # staRsign packge
 
-staRsignは誕生日などの日付から12星座を出力するstaRsign関数と、年（または年を含む日付データ）から十二支を出力するoRiental\_zodiac関数を含むパッケージです。
+`{staRsign}`は誕生日などの日付から12星座を出力する`staRsign()`関数と、年（または年を含む日付データ）から十二支を出力する`oRiental_zodiac()`関数を含むパッケージです。
 
-staRsign is a package containing the staRsign function to output 12 star
-signs from a date such as a birthday and the oRiental\_zodiac function
-to output 12 oriental zodiac from a number of year (or date data
-containing a year).
+`{staRsign}` is a package containing the staRsign function to output 12
+star signs from a date such as a birthday and the oRiental_zodiac
+function to output 12 oriental zodiac from a number of year (or date
+data containing a year).
+
+現在、すべての関数は一つの値しか受け付けないようになっているので、複数の値を処理するときには必要に応じて`sapply()`関数等をつかってください。
+
+Currently, all functions accept only one value, so if you need to
+process multiple values, use the `sapply()` function, etc. as necessary.
 
 ## How to install
 
@@ -16,12 +21,12 @@ containing a year).
 devtools::install_github("indenkun/staRsign")
 ```
 
-## staRsign
+## \`staRsign()
 
 staRsignは誕生日などの日付からから星占いで用いられている12星座をRで出力するための関数です。
 
-staRsign is a function to output the 12 star sign used in astrology from
-the date of birth on R.
+`staRsign()` is a function to output the 12 star sign used in astrology
+from the date of birth on R.
 
 ### How to use
 
@@ -36,7 +41,7 @@ staRsign::staRsign("12/25")
 
     ## [1] "Capricorn"
 
-標準では日付について“%m/%d”形式をサポートしますが、それ以外もフォーマットを指定すると処理可能です。
+標準では日付について”%m/%d”形式をサポートしますが、それ以外もフォーマットを指定すると処理可能です。
 
 By default, “%m/%d” format is supported for the date, but other formats
 can be processed if the format is specified.
@@ -86,11 +91,11 @@ staRsign::staRsign.ja("12/25")
 
     ## [1] "やぎ座"
 
-## oRintal\_zodiac
+## `oRintal_zodiac()`
 
-oRiental\_zodiacは年または年を含む日付データから十二支をRで出力するための関数です。
+`oRiental_zodiac()`は年または年を含む日付データから十二支をRで出力するための関数です。
 
-oRiental\_zodiac is a function to output a zodiac on R from date data
+`oRiental_zodiac()` is a function to output a zodiac on R from date data
 containing a year or number of year.
 
 ### How to use
@@ -147,7 +152,7 @@ staRsign::oRiental_zodiac("2000/2/1")
 
     ## [1] "Dragon"
 
-日付データはデフォルトで“%Y/%m/%d”形式をサポートしますが、それ以外の形式もformatで指定可能です。
+日付データはデフォルトで”%Y/%m/%d”形式をサポートしますが、それ以外の形式もformatで指定可能です。
 
 The date data supports the “%Y/%m/%d” format by default, but other
 formats can also be specified in the format.
@@ -176,28 +181,40 @@ staRsign::oRiental_zodiac.ja("2020/12/25")
 
 ## Imprors to use this package
 
-  - lubridate
+-   `{lubridate}`
 
 ## notice
 
-staRsign関数では誕生日のみを参照しています。
+`staRsign()`関数では誕生日のみを参照しています。
 
-staRsign function referring only to the date of birth.
+`staRsign()` function referring only to the date of birth.
 
 西洋占星術で用いられる正確な十二宮（12星座）の時期については算出していません。
 
 The exact timing of the Twelve Zodiac signs used in Western astrology
 has not been calculated.
 
-現在、oRiental\_zodiac関数では負の年数を入れると正しい十二支を出力できません。
+現在、`oRiental_zodiac()`関数では負の年数を入れると正しい十二支を出力できません。
 
-Currently, the oRiental\_zodiac function cannot output the correct
+Currently, the `oRiental_zodiac()` function cannot output the correct
 oriental zodiac if a negative number of year is entered.
 
 DESCRIPTIONに記載しているメールアドレスはダミーです。なにかあればISSUEに記載してください。
 
 The email address listed in the DESCRIPTION is a dummy. If you have any
 questions, please post them on ISSUE.
+
+冒頭に記載した通り、現在すべての関数は複数の値を受け付けないようになっています。`sapply()`関数等を使用し処理してください。
+
+As noted at the beginning of this section, all functions currently do
+not accept multiple values. Use the `sapply()` function to handle
+multiple values.
+
+``` r
+unname(sapply(c("1/1", "4/1", "9/1"), staRsign))
+```
+
+    ## [1] "Capricorn" "Aries"     "Virgo"
 
 ## License
 
