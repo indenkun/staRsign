@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 devtools::load_all()
 ```
 
-# staRsign packge
+# `{staRsign}`
 
 `{staRsign}`は誕生日などの日付から12星座を出力する`staRsign()`関数と、年（または年を含む日付データ）から十二支を出力する`oRiental_zodiac()`関数を含むパッケージです。
 
@@ -23,9 +23,9 @@ Currently, all functions accept only one value, so if you need to process multip
 ```r
 devtools::install_github("indenkun/staRsign")
 ```
-## `staRsign()
+## `staRsign()`
 
-staRsignは誕生日などの日付からから星占いで用いられている12星座をRで出力するための関数です。
+`staRsign()`は誕生日などの日付からから星占いで用いられている12星座をRで出力するための関数です。
 
 `staRsign()` is a function to output the 12 star sign used in astrology from the date of birth on R.
 

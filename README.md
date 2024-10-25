@@ -1,7 +1,7 @@
 README
 ================
 
-# staRsign packge
+# `{staRsign}`
 
 `{staRsign}`は誕生日などの日付から12星座を出力する`staRsign()`関数と、年（または年を含む日付データ）から十二支を出力する`oRiental_zodiac()`関数を含むパッケージです。
 
@@ -21,9 +21,9 @@ process multiple values, use the `sapply()` function, etc. as necessary.
 devtools::install_github("indenkun/staRsign")
 ```
 
-## \`staRsign()
+## `staRsign()`
 
-staRsignは誕生日などの日付からから星占いで用いられている12星座をRで出力するための関数です。
+`staRsign()`は誕生日などの日付からから星占いで用いられている12星座をRで出力するための関数です。
 
 `staRsign()` is a function to output the 12 star sign used in astrology
 from the date of birth on R.
@@ -181,7 +181,7 @@ staRsign::oRiental_zodiac.ja("2020/12/25")
 
 ## Imprors to use this package
 
--   `{lubridate}`
+- `{lubridate}`
 
 ## notice
 
